@@ -1,4 +1,18 @@
 <?php
+/**
+Drop the file into contacts directory, the one with ContactXXXXX directories, and run it. It should create output file named out.csv. Header of CSV file is in Polish language. 
+
+### It DOES NOT process every exported deatil. Currently works with:
+  - title
+  - name
+  - surname
+  - mobile phone number
+  - first email address
+  - initials
+
+You need to chceck if encoding of CSV file is the same as one used in Windows/Outlook. For Polish language it will be WIN-1250 or ISO 8859-2.
+*/
+
 class crlf_filter extends php_user_filter
 {
        function filter($in, $out, &$consumed, $closing)
