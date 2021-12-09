@@ -1,0 +1,6 @@
+1. ./clean.sh
+2. ./startTCPDump.sh &
+3. ./listenForHosts.sh &
+4. ./writelogs.sh
+5. ./proccessListTXT.php
+6. ./proccessIPs.sh
